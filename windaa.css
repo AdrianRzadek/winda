@@ -1,0 +1,136 @@
+
+*,*:after,*:before {
+  box-sizing:border-box;
+}
+.info{
+  position: fixed;
+  top: 100;
+  right: 15%;
+}
+.info2{
+  position: fixed;
+  top: 0;
+  right: 15%;
+}
+.info3{
+  position: fixed;
+  top: 150;
+  right: 15%;
+}
+.info4{
+  position: fixed;
+  top: 200;
+  right: 15%;
+}
+.info5{
+  position: fixed;
+  top: 250;
+  right: 15%;
+}
+.info6{
+  position: fixed;
+  top: 300;
+  right: 15%;
+}
+.info7{
+  position: fixed;
+  top: 350;
+  right: 15%;
+}
+.info8{
+  position: fixed;
+  top: 400;
+  right: 15%;
+}
+.info9{
+  position: fixed;
+  top: 450;
+  right: 15%;
+}
+.info10{
+  position: fixed;
+  top: 500;
+  right: 15%;
+}
+.info11{
+  position: fixed;
+  top: 550;
+  right: 15%;
+}
+.info12{
+  position: fixed;
+  top: 600;
+  right: 15%;
+}
+.info13{
+  position: fixed;
+  top: 650;
+  right: 15%;
+}
+.building {
+  width: 300px;
+  position: absolute;
+  background: #cc8b6b;
+  background-size:cover,cover;
+  height: 700px;
+  left: 300px;
+  top: 50px;
+  
+  
+}
+.floors {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: stretch;
+  flex-direction: column-reverse;
+  
+  .floor {
+    position:relative;
+    height: 100%;
+    
+    &:after {
+      content:"";
+      display:block;
+      width:100%;
+      position:absolute;
+      top:0;
+      border-top:10px solid rgb(64, 141, 224);
+      opacity:.8;
+    }
+    
+
+    
+    .floor-window {
+      position:absolute;
+      width:100%;
+      left:0;
+      top:0;
+      bottom:0;
+      right:0;
+      height:100%;
+      
+     
+    }
+  }
+}
+.elevator-container {
+  position:absolute;
+  background:rgb(0, 106, 205);
+  width:100px;
+  left:100px;
+  height:100%;
+  z-index: 10;
+  
+  .elevator {
+    width:40px;
+    height:60px;
+    margin-left:-20px;
+    margin-top:7px;
+    left:50%;
+    background:rgb(19, 18, 18);
+    position:absolute;
+    
+ 
+  }
+}
